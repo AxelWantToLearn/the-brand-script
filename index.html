@@ -204,9 +204,9 @@
 
     .plans-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
-      max-width: 860px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
@@ -495,6 +495,13 @@
       filter: brightness(0) invert(1) opacity(0.5);
     }
 
+    .footer-copy {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       #about { grid-template-columns: 1fr; gap: 3rem; }
@@ -524,10 +531,6 @@
     <div class="hero-divider"></div>
     <p class="hero-sub">We script the success for your brand — the new way of social marketing.</p>
     <a href="#plans" class="btn">Discover Our Plans</a>
-    <div class="scroll-hint">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
   </section>
 
   <!-- PLANS -->
@@ -542,7 +545,7 @@
 
       <div class="plan-card">
         <p class="plan-name">Plan A</p>
-        <div class="plan-price">€500 <span>/ month</span></div>
+        <div class="plan-price">€100 <span>/ month</span></div>
         <p class="plan-desc">Perfect for brands starting their social media journey.</p>
         <ul class="plan-features">
           <li>10 Instagram posts / month</li>
@@ -557,12 +560,30 @@
       <div class="plan-card featured">
         <div class="plan-badge">Most Popular</div>
         <p class="plan-name">Plan B</p>
-        <div class="plan-price">€2.500 <span>/ month</span></div>
-        <p class="plan-desc">For brands ready to dominate social media and search.</p>
+        <div class="plan-price">€299 <span>/ month</span></div>
+        <p class="plan-desc">For brands ready to grow faster across all major platforms.</p>
         <ul class="plan-features">
-          <li>200 Instagram posts / month</li>
-          <li>200 TikTok posts / month</li>
+          <li>15 Instagram posts / month</li>
+          <li>15 TikTok posts / month</li>
           <li>Google Ads management</li>
+          <li>Meta Ads management</li>
+          <li>Content creation & copywriting</li>
+          <li>Weekly performance reports</li>
+          <li>Dedicated account manager</li>
+        </ul>
+        <a href="#contact" class="btn-outline">Get Started</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Plan C</p>
+        <div class="plan-price">€579 <span>/ month</span></div>
+        <p class="plan-desc">The complete package for brands ready to dominate online.</p>
+        <ul class="plan-features">
+          <li>20 Instagram posts / month</li>
+          <li>20 TikTok posts / month</li>
+          <li>Google Ads management</li>
+          <li>Meta Ads management</li>
+          <li>Website management</li>
           <li>Content creation & copywriting</li>
           <li>Weekly performance reports</li>
           <li>Priority support</li>
@@ -582,20 +603,6 @@
       <blockquote class="about-quote">"We are the ones who script the success for you."</blockquote>
       <p class="about-text">The Brand — Script — was born from a simple idea: every business deserves a powerful online presence. Based in Bucharest, we combine creative strategy with data-driven execution to help brands grow where it matters most.</p>
       <p class="about-text">We don't just post content — we craft narratives, build communities, and turn followers into loyal customers. Whether you're just starting out or scaling up, we adapt to your goals.</p>
-      <div class="about-stats">
-        <div class="stat">
-          <div class="stat-number">50+</div>
-          <div class="stat-label">Clients served</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">3M+</div>
-          <div class="stat-label">Views generated</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Commitment</div>
-        </div>
-      </div>
     </div>
 
     <div class="about-right">
@@ -642,7 +649,10 @@
     <a href="#home" class="footer-logo">
       <img src="logo.png" alt="The Brand Script" />
     </a>
-    <p>© 2025 The Brand - Script - SRL · Bucharest, Romania</p>
+    <div class="footer-copy">
+      <p>© 2025 The Brand - Script - SRL. All rights reserved.</p>
+      <p>Registered in Romania · Bucharest · rotaru_mihai00@yahoo.com</p>
+    </div>
   </footer>
 
   <script>
